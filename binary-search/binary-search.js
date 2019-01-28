@@ -3,7 +3,27 @@
 // Complete this algo
 const binarySearch = (array, target) => {
 	
+	const arrLength = array.length;
+	if (arrLength === 0) return false;
+	const midPoint = Math.floor(arrLength / 2);
+	if (target <= array[midPoint]) {
+		for (let i = midPoint; i >= 0; i--) {
+			if (target === array[i]) {
+				return true;
+			}
+		}
+	}
+	else {
+		for (let j = midPoint + 1; j < arrLength ; j++) {
+			if (target === array[j]) {
+				return true;
+			}
+		}
+	}
+	return false;
 };
+	
+
 
 /*
 	EXTRA CREDIT:
