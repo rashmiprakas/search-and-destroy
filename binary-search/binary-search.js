@@ -1,6 +1,7 @@
 'use strict';
 
 // Complete this algo
+
 const binarySearch = (array, target) => {
 	
 	const arrLength = array.length;
@@ -23,8 +24,6 @@ const binarySearch = (array, target) => {
 	return false;
 };
 	
-
-
 /*
 	EXTRA CREDIT:
 
