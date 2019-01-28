@@ -2,7 +2,17 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+  const currentHead = this.head;
+  let currentTail = this.tail;
 
+  if (currentHead === currentTail) return false;
+
+  const previousNodes = [];
+
+  while (currentTail !== currentTail.previous.head) {
+    previousNodes.push(currentTail.previous);
+    currentTail = previous.tail
+  }
 };
 
 
